@@ -1788,7 +1788,16 @@ p {
   display: flex;
   justify-content: flex-end;
   margin-bottom: 10px;
-  padding-right: 10px;
+}
+.fbdy_mdl__close-wrapper button {
+  border: none;
+  outline: none;
+  height: 32px;
+  width: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
 }
 
 .fbdy_mdl__close {
@@ -1973,6 +1982,25 @@ p {
   display: none;
 }
 
+/* Overlay - works for both modal and bottom sheet */
+.fbdy_mdl-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 999;
+}
+
+.fbdy_mdl-overlay.mdlactive {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Modal Accordion end */
 
 @media (max-width: 800px) {
@@ -2151,7 +2179,6 @@ p {
   }
 
   .fbdy_mdl__close-wrapper {
-    justify-content: center;
     margin-bottom: 15px;
     padding-right: 0;
   }
