@@ -1688,6 +1688,7 @@ p {
 .near_checkup__arrow.rotated {
   transform: rotate(-135deg);
 }
+
 /* FAQ section  */
 .fbdy-faq-section {
   background: #eef8f8;
@@ -1697,13 +1698,6 @@ p {
   padding: 24px;
   margin-top: 26px;
   height: 400px;
-  overflow: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.fbdy-faq-section::-webkit-scrollbar {
-  display: none;
 }
 
 .fbdy-faq-items {
@@ -1753,21 +1747,19 @@ p {
 }
 
 .fbdy-accordion-content {
-  display: grid;
-  grid-template-rows: 0fr;
-  transition: grid-template-rows 0.3s ease, padding 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  /* padding: 0 12px; */
   color: #555;
   font-size: 13px;
 }
 
-.fbdy-accordion-content > div {
-  overflow: hidden;
-}
-
 .fbdy-accordion-content.accopen,
 .fbdy-accordion-item.accActive .fbdy-accordion-content {
-  grid-template-rows: 1fr;
-  padding: 8px 12px 8px 12px;
+  padding: 8px 12px;
+  max-height: 500px;
+  opacity: 1;
 }
 
 .fbdy-accordion-item.accActive .fbdy-accordion-icon {
