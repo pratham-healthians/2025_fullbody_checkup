@@ -22,19 +22,15 @@ p {
 
 .bg-grad-wht-lavender {
   background: linear-gradient(180deg, #ffffff 0%, #f6f1ff 100%);
-  min-height: 500px;
   box-shadow: 0px 4px 4px 0px #00000014;
 }
 .bg-soft_drop_shadow {
   background: linear-gradient(180deg, #ffffff 0%, #f2f1f5 100%);
-
-  min-height: 500px;
   box-shadow: 0px 4px 4px 0px #00000014;
 }
 
 .bg-gradient-light-green {
   background: linear-gradient(180deg, #ffffff 0%, #edfdf6 100%);
-  min-height: 500px;
   box-shadow: 0px 4px 4px 0px #00000014;
 }
 .bg-gradient-light-pink {
@@ -211,7 +207,7 @@ p {
   position: relative;
   margin-bottom: 18px;
 }
-/* CSS */
+
 .auth-label {
   display: inline-flex;
   align-items: center;
@@ -670,6 +666,10 @@ p {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+.fbdy_cards-continer {
+  min-height: 475px;
 }
 
 .fbdy_dt {
@@ -1697,7 +1697,7 @@ p {
   align-items: flex-start;
   padding: 24px;
   margin-top: 26px;
-  height: 400px;
+  height: auto;
 }
 
 .fbdy-faq-items {
