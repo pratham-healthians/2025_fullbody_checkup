@@ -1000,7 +1000,6 @@ p {
 
 .fbdy_cp_wrap {
   border-radius: 12px;
-  /* padding: 24px; */
 }
 
 .fbdy_cp_ttl {
@@ -1018,7 +1017,7 @@ p {
 .fbdy_cp_tc {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  gap: 25px;
   max-height: 300px;
   overflow: hidden;
   transition: max-height 0.4s ease;
@@ -2053,10 +2052,6 @@ p {
     gap: 24px;
   }
 
-  .fbdy_cp_wrap {
-    padding: 20px;
-  }
-
   .fbdy_inld_container {
     padding: 24px;
   }
@@ -2083,6 +2078,7 @@ p {
     flex-direction: column;
     align-items: flex-start;
     gap: 18px;
+    position: relative;
   }
   .fbdy_hq-body-wrap {
     flex-direction: column;
@@ -2115,6 +2111,15 @@ p {
     width: auto;
     align-items: unset;
   }
+
+  .fbdy_slide_btns {
+    position: absolute;
+    right: 24px;
+    top: 30px;
+    width: auto;
+    gap: 20px;
+  }
+
   .near_checkup__list {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -2157,6 +2162,24 @@ p {
   }
 
   .fbdy-faq-items {
+    width: auto;
+  }
+  .fbdy-accordion-header:hover {
+    background: none;
+  }
+  .fbdy_cp_bc {
+    text-align: left;
+  }
+
+  .fbdy_slide_btn-lf,
+  .fbdy_slide_btn-rt {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  .fbdy_slide_btn-lf img,
+  .fbdy_slide_btn-rt img {
+    height: 40px;
     width: auto;
   }
 }
