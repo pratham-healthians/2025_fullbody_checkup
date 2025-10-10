@@ -2192,4 +2192,19 @@ p {
     flex: 1;
     min-width: auto;
   }
+  .fbdy_dsc {
+    font-size: 10px;
+    padding: 2px 6px;
+    font-weight: 400;
+  }
+
+  .fbdy_crd {
+    padding: 14px;
+  }
+  .fbdy_ofr {
+    align-items: flex-end;
+  }
+  .fbdy_slc-btn {
+    width: 100px;
+  }
 }
