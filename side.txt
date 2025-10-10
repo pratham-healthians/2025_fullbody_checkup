@@ -1,0 +1,86 @@
+  <!-- ===============Modal ================= -->
+        <!-- <button class="fbdy_demo-btn" id="openModalBtn">Open Blank Modal</button> -->
+        <!-- <div class="fbdy_mdl-wrap">
+            <div class="fbdy_mdl-closewrap">
+                <button type="button" class="fbdy_mdl-close" aria-label="Close">×</button>
+            </div>
+
+            <div class="fbdy_mdl-box" id="genericModal">
+                <div class="fbdy_mdl-head">
+                    <div class="fbdy_mdl-ttl">Live More Screening Package With Free</div>
+                    <div class="fbdy_mdl-subttl"></div>
+                </div>
+                <div class="fbdy_mdl-body">
+                    <div class="fbdy_mdl-content"></div>
+                </div>
+
+
+                <div class="fbdy_mdl-flush" id="fbdy_mdlFlush">
+                    <div class="fbdy_mdl-item">
+                        <h2 class="fbdy_mdl-header">
+                            <button class="fbdy_mdl-button fbdy_collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fbdy_mdlCollapseOne" aria-expanded="false"
+                                aria-controls="fbdy_mdlCollapseOne">
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div id="fbdy_mdlCollapseOne" class="fbdy_mdl-collapse fbdy_collapse"
+                            data-bs-parent="#fbdy_mdlFlush">
+
+                            <div class="fbdy_mdl-body">
+                                <p class="fbdy_param">Albumin, Serum</p>
+                                <p class="fbdy_param">Alkaline Phosphatase, Serum</p>
+                                <p class="fbdy_param">Bilirubin Direct, Serum</p>
+                                <p class="fbdy_param">Bilirubin Total, Serum</p>
+                                <p class="fbdy_param">GGTP (Gamma GT)</p>
+                                <p class="fbdy_param">Proteins, Serum</p>
+                                <p class="fbdy_param">SGOT/AST</p>
+                                <p class="fbdy_param">SGPT/ALT</p>
+                                <p class="fbdy_param">Bilirubin- Indirect, Serum</p>
+                                <p class="fbdy_param">Globulin</p>
+                                <p class="fbdy_param">A/G Ratio</p>
+                                <p class="fbdy_param">SGOT/SGPT Ratio</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fbdy_mdl-item">
+                        <h2 class="fbdy_mdl-header">
+                            <button class="fbdy_mdl-button fbdy_collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fbdy_mdlCollapseTwo" aria-expanded="false"
+                                aria-controls="fbdy_mdlCollapseTwo">
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div id="fbdy_mdlCollapseTwo" class="fbdy_mdl-collapse fbdy_collapse"
+                            data-bs-parent="#fbdy_mdlFlush">
+                            <div class="fbdy_mdl-body">
+                                Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.fbdy_mdl-flush</code> class. This is the second item’s accordion body. Let’s
+                                imagine this being
+                                filled with some actual content.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="fbdy_mdl-item">
+                        <h2 class="fbdy_mdl-header">
+                            <button class="fbdy_mdl-button fbdy_collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fbdy_mdlCollapseThree" aria-expanded="false"
+                                aria-controls="fbdy_mdlCollapseThree">
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div id="fbdy_mdlCollapseThree" class="fbdy_mdl-collapse fbdy_collapse"
+                            data-bs-parent="#fbdy_mdlFlush">
+                            <div class="fbdy_mdl-body">
+                                Placeholder content for this accordion, which is intended to demonstrate the
+                                <code>.fbdy_mdl-flush</code> class. This is the third item’s accordion body. Nothing
+                                more exciting
+                                happening here in terms of content, but just filling up the space to make it look, at
+                                least at first
+                                glance, a bit more representative of how this would look in a real-world application.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
