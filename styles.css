@@ -669,10 +669,6 @@ p {
   outline: none;
 }
 
-.fbdy_cards-continer {
-  min-height: 475px;
-}
-
 .fbdy_dt {
   background: white;
   color: #494e4d;
@@ -2009,6 +2005,14 @@ p {
 
 /* Mobile adjustments */
 @media (max-width: 650px) {
+  .fbdy_cards-continer {
+    padding-bottom: 24px;
+    height: 100%;
+  }
+  .pkg-checkup__carousel .splide__pagination {
+    bottom: unset;
+  }
+
   .fbdy_hero-query {
     display: none;
   }
@@ -2183,5 +2187,9 @@ p {
   .fbdy_slide_btn-rt img {
     height: 40px;
     width: auto;
+  }
+  .fbdy_inld_list_column {
+    flex: 1;
+    min-width: auto;
   }
 }
