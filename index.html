@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <svg style="display: none;">
+    <svg style="display: none">
         <symbol id="star" viewBox="0 0 20 20">
             <path
                 d="M10.0003 1.66699L12.5753 6.88366L18.3337 7.72533L14.167 11.7837L15.1503 17.517L10.0003 14.8087L4.85033 17.517L5.83366 11.7837L1.66699 7.72533L7.42533 6.88366L10.0003 1.66699Z"
@@ -24,10 +24,23 @@
         </symbol>
     </svg>
     <div class="fbdy_main">
-
         <div class="fbdy_container">
             <!-- hero -->
             <div class="fbdy_hero">
+                <!-- bread crumb -->
+                <div class="fbdy_breadcrumb" aria-label="Breadcrumb">
+                    <ol class="fbdy_breadcrumb-list">
+                        <li class="fbdy_breadcrumb-item">
+                            <a href="/" class="fbdy_breadcrumb-link">Home</a>
+                        </li>
+
+                        <li class="fbdy_breadcrumb-separator">›</li>
+                        <li class="fbdy_breadcrumb-item">
+                            <span class="fbdy_breadcrumb-current">Full Body Checkup in Gurgaon</span>
+                        </li>
+                    </ol>
+                </div>
+                <!-- bread crumb end -->
                 <div class="fbdy_wrapper">
                     <div class="fbdy_content">
                         <div class="fbdy_text">
@@ -45,15 +58,13 @@
                             </div>
                         </div>
 
+                        <div class="fbdy-hero-image"></div>
+
                         <div class="fbdy_query-form">
                             <div class="fbdy_hero-query">
                                 <div class="fbdy_hero-query__header">
-                                    <h3 class="fbdy_hero-query__title">
-                                        Need help in booking a lab test?
-                                    </h3>
-                                    <p class="fbdy_hero-query__subtitle">
-                                        Fill in your details and we’ll reach out
-                                    </p>
+                                    <h3 class="fbdy_hero-query__title">Need help in booking a lab test?</h3>
+                                    <p class="fbdy_hero-query__subtitle">Fill in your details and we’ll reach out</p>
                                 </div>
 
                                 <form class="fbdy_hero-query__form">
@@ -61,16 +72,18 @@
                                     <div class="fbdy_hero-input fbdy_hero-input--phone">
                                         <input type="tel" class="fbdy_hero-input__field" id="contact_no" name="user_no"
                                             maxlength="10" placeholder=" " required />
-                                        <label for="contact_no" class="fbdy_hero-input__label"> Mobile Number <span
-                                                class="fbdy_hero-input__star">*</span> </label>
+                                        <label for="contact_no" class="fbdy_hero-input__label">
+                                            Mobile Number <span class="fbdy_hero-input__star">*</span>
+                                        </label>
                                     </div>
 
                                     <!-- Name -->
                                     <div class="fbdy_hero-input fbdy_hero-input--name">
                                         <input type="text" class="fbdy_hero-input__field" id="user_name"
                                             name="patient_name" maxlength="50" placeholder=" " required />
-                                        <label for="user_name" class="fbdy_hero-input__label"> Full name <span
-                                                class="fbdy_hero-input__star">*</span> </label>
+                                        <label for="user_name" class="fbdy_hero-input__label">
+                                            Full name <span class="fbdy_hero-input__star">*</span>
+                                        </label>
                                     </div>
 
                                     <!-- City -->
@@ -82,8 +95,9 @@
                                             <option value="bangalore">Bangalore</option>
                                             <option value="chennai">Chennai</option>
                                         </select>
-                                        <label for="city" class="fbdy_hero-select__label"> Select City <span
-                                                class="fbdy_hero-select__star">*</span> </label>
+                                        <label for="city" class="fbdy_hero-select__label">
+                                            Select City <span class="fbdy_hero-select__star">*</span>
+                                        </label>
                                     </div>
 
                                     <label class="auth-label">
@@ -93,9 +107,8 @@
                                     </label>
 
                                     <!-- Submit -->
-                                    <button type="submit" class="fbdy_hero-btn fbdy_hero-btn--submit">
-                                        Request for Callback
-                                    </button>
+                                    <button type="submit" class="fbdy_hero-btn fbdy_hero-btn--submit">Request for
+                                        Callback</button>
                                 </form>
                             </div>
                         </div>
@@ -154,22 +167,18 @@
 
             <div class="fbdy_mdl__wrapper" id="fbdyModal">
                 <div class="fbdy_mdl__close-wrapper">
-                    <button type="button" class="fbdy_mdl__close" aria-label="Close"><svg width="12" height="12"
-                            viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M0 1.41L4.32659 6L0 10.59L1.33198 12L7 6L1.33198 0L0 1.41Z" fill="#909292"></path>
-                            <path d="M12 1.41L7.67341 6L12 10.59L10.668 12L5 6L10.668 0L12 1.41Z" fill="#909292"></path>
-                        </svg></button>
+                    <button type="button" class="fbdy_mdl__close" aria-label="Close">
+                        <img src="assets/close.svg" alt="" />
+                    </button>
                 </div>
                 <div class="fbdy_mdl__container">
                     <div class="fbdy_mdl__header">
-                        <div class="fbdy_mdl__title">Healthy India 2025 Full Body Checkup With Free
-                            Iron Test</div>
+                        <div class="fbdy_mdl__title">Healthy India 2025 Full Body Checkup With Free Iron Test</div>
                         <div class="fbdy_mdl__subtitle">Included: 67 Tests</div>
                     </div>
                     <div class="fbdy_mdl__body">
                         <div class="fbdy_mdl__content">
                             <div class="fbdy_test_dtl_container">
-
                                 <!-- Example: Expandable test item -->
                                 <div class="fbdy_test_dtl_item">
                                     <div class="fbdy_test_dtl_header">
@@ -242,13 +251,11 @@
                                         <div class="fbdy_test_dtl_icon"></div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
 
             <!--Essential Full Body Checkup Package  cards -->
             <div class="fbdy_cards-continer bg-grad-wht-lavender">
@@ -276,13 +283,15 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
-                                                        <div class="fbdy_card-val" id=" ">75 Tests <span
-                                                                class="fbdy_slc-arrow"></span></div>
+                                                        <div class="fbdy_card-val" id="test-included-1">
+                                                            75 Tests <span class="fbdy_slc-arrow"></span>
+                                                        </div>
                                                     </div>
                                                 </div>
 
@@ -301,8 +310,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <button class="fbdy_mor" data-title="Card 1 Title"
                                                         data-subtitle="Card 1 Subtitle"
@@ -337,7 +346,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_1"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -349,7 +359,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -361,7 +372,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -373,7 +385,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -409,8 +422,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -436,13 +450,12 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span><button class="fbdy_mor"
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span><button class="fbdy_mor"
                                                         data-title="Card 2 Title" data-subtitle="Card 2 Subtitle"
                                                         data-content="This is card 2 content.">
                                                         59 more
                                                     </button>
-
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -473,7 +486,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -485,7 +499,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -497,7 +512,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -509,7 +525,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -546,8 +563,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -571,8 +589,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -603,7 +621,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -615,7 +634,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -627,7 +647,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -639,7 +660,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -690,8 +712,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -715,8 +738,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -747,7 +770,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -759,7 +783,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -771,7 +796,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -783,7 +809,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -820,8 +847,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -845,8 +873,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -877,7 +905,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_5"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -889,7 +918,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -901,7 +931,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -913,7 +944,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -950,8 +982,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -975,8 +1008,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1007,7 +1040,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_6"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1019,7 +1053,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1031,7 +1066,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1043,7 +1079,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -1094,8 +1131,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -1119,8 +1157,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1151,7 +1189,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_7"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1163,7 +1202,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1175,7 +1215,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1187,7 +1228,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -1224,8 +1266,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -1249,8 +1292,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1281,7 +1324,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_8"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1293,7 +1337,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1305,7 +1350,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1317,7 +1363,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -1354,8 +1401,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -1379,8 +1427,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1411,7 +1459,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_9"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1423,7 +1472,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1435,7 +1485,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1447,7 +1498,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -1498,8 +1550,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -1523,8 +1576,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1555,7 +1608,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_7"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1567,7 +1621,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1579,7 +1634,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1591,7 +1647,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -1628,8 +1685,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -1653,8 +1711,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1685,7 +1743,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_8"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1697,7 +1756,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1709,7 +1769,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1721,7 +1782,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -1758,8 +1820,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -1783,8 +1846,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1815,7 +1878,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_9"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1827,7 +1891,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1839,7 +1904,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1851,7 +1917,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -1902,8 +1969,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -1927,8 +1995,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -1959,7 +2027,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_7"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -1971,7 +2040,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -1983,7 +2053,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -1995,7 +2066,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -2032,8 +2104,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -2057,8 +2130,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -2089,7 +2162,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_8"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -2101,7 +2175,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -2113,7 +2188,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -2125,7 +2201,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -2162,8 +2239,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -2187,8 +2265,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -2219,7 +2297,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_9"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -2231,7 +2310,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -2243,7 +2323,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -2255,7 +2336,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -2306,8 +2388,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -2331,8 +2414,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -2363,7 +2446,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_7"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -2375,7 +2459,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -2387,7 +2472,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -2399,7 +2485,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -2436,8 +2523,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -2461,8 +2549,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -2493,7 +2581,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_8"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -2505,7 +2594,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -2517,7 +2607,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -2529,7 +2620,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -2566,8 +2658,9 @@
 
                                             <div class="fbdy_inf">
                                                 <div class="fbdy_itm">
-                                                    <div class="fbdy_icn fbdy_ic1"><img class="fbdy_icn-img"
-                                                            src="./assets/drop.svg" alt="" /></div>
+                                                    <div class="fbdy_icn fbdy_ic1">
+                                                        <img class="fbdy_icn-img" src="./assets/drop.svg" alt="" />
+                                                    </div>
 
                                                     <div class="fbdy_txt">
                                                         <div class="fbdy_lbl">Test Included</div>
@@ -2591,8 +2684,8 @@
                                                 <input type="checkbox" id="fbdy_tgl" class="fbdy_chk" />
                                                 <div class="fbdy_td">
                                                     <span class="fbdy_short">Complete Hemogram, HbA1C, Liver Function
-                                                        Test, Thyroid, Kidney Function Test, Lipid Profile,
-                                                        Chikungunya...</span>
+                                                        Test, Thyroid, Kidney Function Test, Lipid
+                                                        Profile, Chikungunya...</span>
 
                                                     <label for="fbdy_tgl" class="fbdy_mor"></label>
                                                 </div>
@@ -2623,7 +2716,8 @@
                                                                 <label for="fbdy_radio_1">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_9"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="1" /> 1 Member</span>
+                                                                            value="1" /> 1
+                                                                        Member</span>
                                                                     <span class="fbdy_slc-price">₹2250 <font>₹6250
                                                                         </font></span>
                                                                 </label>
@@ -2635,7 +2729,8 @@
                                                                 <label for="fbdy_radio_2">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_2"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="2" /> 2 Members</span>
+                                                                            value="2" /> 2
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹3500 <font>₹12500
                                                                         </font> </span>
                                                                 </label>
@@ -2647,7 +2742,8 @@
                                                                 <label for="fbdy_radio_3">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_3"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="3" /> 3 Members</span>
+                                                                            value="3" /> 3
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹4312 <font>₹18750
                                                                         </font> </span>
                                                                 </label>
@@ -2659,7 +2755,8 @@
                                                                 <label for="fbdy_radio_4">
                                                                     <span class="fbdy_slc-text"><input id="fbdy_radio_4"
                                                                             type="radio" name="fbdy_numbers"
-                                                                            value="4" /> 4 Members</span>
+                                                                            value="4" /> 4
+                                                                        Members</span>
                                                                     <span class="fbdy_slc-price">₹5250 <font>₹25000
                                                                         </font> </span>
                                                                 </label>
@@ -2874,7 +2971,7 @@
                         <div class="fbdy_cp_bc">
                             <button class="fbdy_cp_btn" id="price_table_btn">
                                 <span class="fbdy_cp_txt">Expand all</span>
-                                <span class="fbdy_cp_arr"><img src="./dropdown.svg" alt="" /></span>
+                                <span class="fbdy_cp_arr"><img src="./assets/dropdown.svg" alt="" /></span>
                             </button>
                         </div>
                     </div>
@@ -2883,15 +2980,18 @@
 
             <!-- What Include full body check -->
             <div class="fbdy_container">
-                <div class="fbdy_wrapper">
+                <div class="fbdy_wrapper wt_icld_wrpr">
                     <div class="fbdy_inld_section">
                         <h2 class="fbdy_inld_heading">Whats included in Full Body Checkup</h2>
                         <p class="fbdy_inld_text">
                             A full body checkup typically includes a wide range of tests to assess your overall health.
-                            These cover essential blood investigations such as Complete Blood Count (CBC), Hemoglobin,
-                            Blood Sugar (Fasting & Postprandial),
-                            Lipid Profile for cholesterol levels, as well as Liver Function and Kidney Function tests.
-                            Hormonal and metabolic health is evaluated through Thyroid Profile (T3, T4, TSH), Vitamin D,
+                            These cover
+                            essential blood investigations such as Complete Blood Count (CBC), Hemoglobin, Blood Sugar
+                            (Fasting &
+                            Postprandial), Lipid Profile for cholesterol levels, as well as Liver Function and Kidney
+                            Function
+                            tests. Hormonal and metabolic health is evaluated through Thyroid Profile (T3, T4, TSH),
+                            Vitamin D,
                             Vitamin B12, and Calcium levels.
                         </p>
                     </div>
@@ -2900,9 +3000,10 @@
                         <h2 class="fbdy_inld_heading">Who should get a Full Body Checkup</h2>
                         <p class="fbdy_inld_text">
                             A full body checkup is not just for people who are unwell — it’s a proactive step to stay
-                            healthy. Regular preventive checkups help in detecting hidden health conditions early,
-                            reduce long-term risks, and give you peace of
-                            mind about your overall well-being.
+                            healthy.
+                            Regular preventive checkups help in detecting hidden health conditions early, reduce
+                            long-term risks,
+                            and give you peace of mind about your overall well-being.
                         </p>
 
                         <div class="fbdy_inld_list_container">
@@ -2911,16 +3012,19 @@
                                     <li class="fbdy_inld_list_item">Adults above 30 years</li>
                                     <li class="fbdy_inld_list_item">Working professionals with busy or stressful
                                         lifestyles</li>
-                                    <li class="fbdy_inld_list_item">People with a family history of diabetes, heart
-                                        disease, or hypertension</li>
+                                    <li class="fbdy_inld_list_item">
+                                        People with a family history of diabetes, heart disease, or hypertension
+                                    </li>
                                 </ul>
                             </div>
                             <div class="fbdy_inld_list_column">
                                 <ul class="fbdy_inld_list">
-                                    <li class="fbdy_inld_list_item">Individuals facing fatigue, stress, irregular sleep,
-                                        or unhealthy habits</li>
-                                    <li class="fbdy_inld_list_item">Anyone who wants preventive care and early detection
-                                        of health issues</li>
+                                    <li class="fbdy_inld_list_item">
+                                        Individuals facing fatigue, stress, irregular sleep, or unhealthy habits
+                                    </li>
+                                    <li class="fbdy_inld_list_item">
+                                        Anyone who wants preventive care and early detection of health issues
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -2943,24 +3047,28 @@
 
             <div class="fbdy_container">
                 <div class="fbdy_wrapper">
-                    <div class="fbdy_inld_section">
+                    <div class="fbdy_inld_section wt_icld_wrpr">
                         <h2 class="fbdy_inld_heading">Whats included in Full Body Checkup</h2>
                         <p class="fbdy_inld_text">
                             A full body checkup typically includes a wide range of tests to assess your overall health.
-                            These cover essential blood investigations such as Complete Blood Count (CBC), Hemoglobin,
-                            Blood Sugar (Fasting & Postprandial),
-                            Lipid Profile for cholesterol levels, as well as Liver Function and Kidney Function tests.
-                            Hormonal and metabolic health is evaluated through Thyroid Profile (T3, T4, TSH), Vitamin D,
+                            These cover
+                            essential blood investigations such as Complete Blood Count (CBC), Hemoglobin, Blood Sugar
+                            (Fasting &
+                            Postprandial), Lipid Profile for cholesterol levels, as well as Liver Function and Kidney
+                            Function
+                            tests. Hormonal and metabolic health is evaluated through Thyroid Profile (T3, T4, TSH),
+                            Vitamin D,
                             Vitamin B12, and Calcium levels.
                         </p>
                     </div>
-                    <div class="fbdy_inld_section">
+                    <div class="fbdy_inld_section wt_icld_wrpr">
                         <h2 class="fbdy_inld_heading">Who should get a Full Body Checkup</h2>
                         <p class="fbdy_inld_text">
                             A full body checkup is not just for people who are unwell — it’s a proactive step to stay
-                            healthy. Regular preventive checkups help in detecting hidden health conditions early,
-                            reduce long-term risks, and give you peace of
-                            mind about your overall well-being.
+                            healthy.
+                            Regular preventive checkups help in detecting hidden health conditions early, reduce
+                            long-term risks,
+                            and give you peace of mind about your overall well-being.
                         </p>
                     </div>
                 </div>
@@ -3007,11 +3115,13 @@
                                 </div>
                             </div>
                             <div class="fbdy_slide_btns">
-                                <button class="fbdy_slide_btn-lf" id="ratingLeft"><img src="./assets/slide-left.png"
-                                        alt="" /></button>
+                                <button class="fbdy_slide_btn-lf" id="ratingLeft">
+                                    <img src="./assets/slide-left.png" alt="" />
+                                </button>
 
-                                <button class="fbdy_slide_btn-rt" id="ratingRight"><img src="./assets/slide-right.png"
-                                        alt="" /></button>
+                                <button class="fbdy_slide_btn-rt" id="ratingRight">
+                                    <img src="./assets/slide-right.png" alt="" />
+                                </button>
                             </div>
                         </div>
 
@@ -3022,12 +3132,14 @@
                                     <ul class="splide__list fbdy_review-list">
                                         <li class="splide__slide">
                                             <div class="fbdy_review-card">
-                                                <img class="fbdy_quote-icon" src="./quotes.svg" />
+                                                <img class="fbdy_quote-icon" src="./assets/quotes.svg" />
 
                                                 <p class="fbdy_review-text">
                                                     Excellent service! The phlebotomist arrived exactly on time and was
-                                                    very professional. The blood collection was painless and reports
-                                                    were delivered within 24 hrs as promised. Highly recommend...
+                                                    very professional. The
+                                                    blood collection was painless and reports were delivered within 24
+                                                    hrs as promised. Highly
+                                                    recommend...
                                                 </p>
 
                                                 <hr class="fbdy_dotted-divider" />
@@ -3065,12 +3177,14 @@
                                         </li>
                                         <li class="splide__slide">
                                             <div class="fbdy_review-card">
-                                                <img class="fbdy_quote-icon" src="./quotes.svg" />
+                                                <img class="fbdy_quote-icon" src="./assets/quotes.svg" />
 
                                                 <p class="fbdy_review-text">
                                                     Excellent service! The phlebotomist arrived exactly on time and was
-                                                    very professional. The blood collection was painless and reports
-                                                    were delivered within 24 hrs as promised. Highly recommend...
+                                                    very professional. The
+                                                    blood collection was painless and reports were delivered within 24
+                                                    hrs as promised. Highly
+                                                    recommend...
                                                 </p>
 
                                                 <hr class="fbdy_dotted-divider" />
@@ -3109,12 +3223,13 @@
 
                                         <li class="splide__slide">
                                             <div class="fbdy_review-card">
-                                                <img class="fbdy_quote-icon" src="./quotes.svg" />
+                                                <img class="fbdy_quote-icon" src="./assets/quotes.svg" />
 
                                                 <p class="fbdy_review-text">
                                                     Great experience! Quick booking process and timely service. The
-                                                    technician was polite and handled everything professionally. Reports
-                                                    were accurate and delivered on time.
+                                                    technician was polite and
+                                                    handled everything professionally. Reports were accurate and
+                                                    delivered on time.
                                                 </p>
 
                                                 <hr class="fbdy_dotted-divider" />
@@ -3325,15 +3440,13 @@
                         <div class="fbdy_cp_bc">
                             <button class="fbdy_cp_btn" id="near_checkup_btn">
                                 <span class="fbdy_cp_txt">Show more</span>
-                                <span class="fbdy_cp_arr"><img src="./dropdown.svg" alt="" /></span>
+                                <span class="fbdy_cp_arr"><img src="./assets/drop_down.svg" alt="" /></span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Full Body Checkup near you in Gurgaon end -->
-
-
 
             <!-- FAQ Section -->
 
@@ -3353,12 +3466,9 @@
                                 <div class="fbdy-accordion-content">
                                     Healthians offers a wide range of full body health checkup packages, keeping in mind
                                     the
-                                    affordability
-                                    and requirements of an individual. All of these packages are crafted carefully to
-                                    meet
-                                    the
-                                    needs of
-                                    customers.
+                                    affordability and requirements of an individual. All of these packages are crafted
+                                    carefully to meet
+                                    the needs of customers.
                                 </div>
                             </div>
 
@@ -3369,10 +3479,8 @@
                                 </div>
                                 <div class="fbdy-accordion-content">
                                     It’s recommended to start routine checkups from age 30 onwards, or earlier if you
-                                    have
-                                    risk
-                                    factors or
-                                    symptoms.
+                                    have risk factors
+                                    or symptoms.
                                 </div>
                             </div>
 
@@ -3383,8 +3491,7 @@
                                 </div>
                                 <div class="fbdy-accordion-content">
                                     Fatigue, unexplained weight changes, frequent infections, or persistent pain are
-                                    common
-                                    signs to
+                                    common signs to
                                     consider a full body checkup.
                                 </div>
                             </div>
@@ -3396,10 +3503,8 @@
                                 </div>
                                 <div class="fbdy-accordion-content">
                                     Costs vary by provider and location. Healthians offers affordable packages tailored
-                                    to
-                                    your
-                                    region and
-                                    needs.
+                                    to your region
+                                    and needs.
                                 </div>
                             </div>
 
@@ -3412,8 +3517,7 @@
                                     The human body contains elements like oxygen, carbon, hydrogen, nitrogen, calcium,
                                     phosphorus,
                                     potassium, sulfur, sodium, chlorine, magnesium, and trace elements like iron, zinc,
-                                    copper,
-                                    iodine,
+                                    copper, iodine,
                                     selenium, etc.
                                 </div>
                             </div>
@@ -3422,8 +3526,71 @@
                 </div>
             </div>
 
-
             <!-- FAQ Section end -->
+
+            <!-- Mobile Popup for query form  -->
+            <button class="mbl_open-btn">Open Form</button>
+
+            <!-- Mobile Popup -->
+            <div class="mbl_qform" id="mblQform">
+                <button class="mbl_qform-close" id="mblCloseBtn"><img src="assets/close.svg" alt="" /></button>
+                <div class="mbl_qform-content">
+                    <div class="fbdy_query-form">
+                        <div class="fbdy_hero-query fbdy_hero-query--mbl">
+                            <div class="fbdy_hero-query__header">
+                                <h3 class="fbdy_hero-query__title">Need help in booking a lab test?</h3>
+                                <p class="fbdy_hero-query__subtitle">Fill in your details and we’ll reach out</p>
+                            </div>
+
+                            <form class="fbdy_hero-query__form">
+                                <!-- Phone -->
+                                <div class="fbdy_hero-input fbdy_hero-input--phone">
+                                    <input type="tel" class="fbdy_hero-input__field" id="contact_no" name="user_no"
+                                        maxlength="10" placeholder=" " required />
+                                    <label for="contact_no" class="fbdy_hero-input__label">
+                                        Mobile Number <span class="fbdy_hero-input__star">*</span>
+                                    </label>
+                                </div>
+
+                                <!-- Name -->
+                                <div class="fbdy_hero-input fbdy_hero-input--name">
+                                    <input type="text" class="fbdy_hero-input__field" id="user_name" name="patient_name"
+                                        maxlength="50" placeholder=" " required />
+                                    <label for="user_name" class="fbdy_hero-input__label">
+                                        Full name <span class="fbdy_hero-input__star">*</span>
+                                    </label>
+                                </div>
+
+                                <!-- City -->
+                                <div class="fbdy_hero-select">
+                                    <select id="city" name="city" required class="fbdy_hero-select__field">
+                                        <option value="" disabled selected></option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="mumbai">Mumbai</option>
+                                        <option value="bangalore">Bangalore</option>
+                                        <option value="chennai">Chennai</option>
+                                    </select>
+                                    <label for="city" class="fbdy_hero-select__label">
+                                        Select City <span class="fbdy_hero-select__star">*</span>
+                                    </label>
+                                </div>
+
+                                <label class="auth-label">
+                                    <input type="checkbox" class="auth-checkbox" />
+                                    You hereby affirm & authorise Healthians to process the personal data as per the
+                                    T&amp;C.
+                                </label>
+
+                                <!-- Submit -->
+                                <button type="submit" class="fbdy_hero-btn fbdy_hero-btn--submit">Request for
+                                    Callback</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Popup for query form  end -->
         </div>
     </div>
 
@@ -3449,25 +3616,22 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         });
     </script>
 
-
-
-
     <!-- splide 1 -->
     <script>
         document.querySelectorAll(".splide:not(.splide--tests)").forEach(function (el) {
             new Splide(el, {
                 perPage: 3,
-                gap: "2rem",
+                gap: "14px",
                 arrows: false,
                 pagination: false,
                 breakpoints: {
                     991: {
                         perPage: 2,
-                        gap: "12px",
+                        gap: "10px",
                     },
                     650: {
                         perPage: 1,
-                        gap: "12px",
+                        gap: "6px",
                         pagination: true,
                         padding: {
                             right: "10%",
@@ -3608,36 +3772,57 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
         initStarRating();
     </script>
 
-
-
     <!-- FAQ script -->
     <script>
         // Open the first item by default
-        const firstItem = document.querySelector('.fbdy-accordion-item');
-        const firstContent = firstItem.querySelector('.fbdy-accordion-content');
-        firstItem.classList.add('accActive');
-        firstContent.classList.add('accopen');
+        const firstItem = document.querySelector(".fbdy-accordion-item");
+        const firstContent = firstItem.querySelector(".fbdy-accordion-content");
+        firstItem.classList.add("accActive");
+        firstContent.classList.add("accopen");
 
         // Add click event to all headers
-        document.querySelectorAll('.fbdy-accordion-header').forEach(header => {
-            header.addEventListener('click', () => {
+        document.querySelectorAll(".fbdy-accordion-header").forEach((header) => {
+            header.addEventListener("click", () => {
                 const clickedItem = header.parentElement;
-                const clickedContent = clickedItem.querySelector('.fbdy-accordion-content');
+                const clickedContent = clickedItem.querySelector(".fbdy-accordion-content");
 
                 // Close all items
-                document.querySelectorAll('.fbdy-accordion-item').forEach(item => {
-                    item.classList.remove('accActive');
-                    item.querySelector('.fbdy-accordion-content').classList.remove('accopen');
+                document.querySelectorAll(".fbdy-accordion-item").forEach((item) => {
+                    item.classList.remove("accActive");
+                    item.querySelector(".fbdy-accordion-content").classList.remove("accopen");
                 });
 
                 // Open the clicked item
-                clickedItem.classList.add('accActive');
-                clickedContent.classList.add('accopen');
+                clickedItem.classList.add("accActive");
+                clickedContent.classList.add("accopen");
             });
         });
     </script>
 
     <!-- FAQ script end -->
+
+    <!-- Mobile Popup Query form -->
+    <script>
+        const openBtn = document.querySelector(".mbl_open-btn");
+        const popup = document.getElementById("mblQform");
+        const closeBtn = document.getElementById("mblCloseBtn");
+
+        openBtn.addEventListener("click", () => {
+            popup.classList.add("active");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            popup.classList.remove("active");
+        });
+
+        // Optional: click outside content closes
+        popup.addEventListener("click", (e) => {
+            if (e.target === popup) {
+                popup.classList.remove("active");
+            }
+        });
+    </script>
+    <!-- Mobile Popup Query form end -->
 
     <script src="./index.js"></script>
 </body>

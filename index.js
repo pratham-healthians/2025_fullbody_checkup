@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
   modal.parentNode.insertBefore(overlay, modal);
 
   // Open modal
-  document.querySelectorAll(".fbdy_mor").forEach((btn) => {
+  document.querySelectorAll(".fbdy_mor, #test-included-1").forEach((btn) => {
     btn.addEventListener("click", () => {
       modal.classList.add("mdlactive");
       overlay.classList.add("mdlactive");
