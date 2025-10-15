@@ -144,7 +144,7 @@ p {
   font-size: clamp(24px, 4vw, 42px);
   font-weight: 700;
   color: #00a0a8;
-  line-height: clamp(40px, 5vw, 56px);
+  line-height: clamp(26px, 5vw, 56px);
 }
 
 .fbdy_hero-para span {
@@ -169,7 +169,7 @@ p {
   align-items: center;
   gap: 8px;
   padding: 12px 16px;
-  width: clamp(180px, 20vw, 226px);
+  width: clamp(150px, 20vw, 226px);
   height: clamp(50px, 8vw, 57px);
   border: 1.4px solid #00a0a8;
   box-shadow: 0px 4px 4px 0px #0000001c;
@@ -180,7 +180,7 @@ p {
   font-weight: 400;
   color: #738586;
   padding-right: 12px;
-  margin-right: 12px;
+  /* margin-right: 12px; */
   text-align: right;
   border-right: 1px dashed #ccc;
 }
@@ -202,7 +202,7 @@ p {
 }
 
 .fbdy_hero_book-btn {
-  width: clamp(180px, 20vw, 226px);
+  width: clamp(150px, 20vw, 226px);
   height: clamp(50px, 8vw, 57px);
   border-radius: 12px;
   font-weight: 600;
@@ -2209,8 +2209,6 @@ p {
   max-height: 60%;
   max-width: 100%;
   object-fit: contain;
-  filter: invert(17%) sepia(92%) saturate(6614%) hue-rotate(258deg)
-    brightness(96%) contrast(105%);
 }
 
 /* Marquee END */
@@ -2218,6 +2216,25 @@ p {
 /* How to book Full Body Checkup Package in Gurgaon */
 .fbdy_whyHlt-journey .fbdy_whyHlt-title_tg {
   margin: 5px 0px 10px 0px;
+}
+
+.fbdy_marquee .our_patnr {
+  font-weight: 600;
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: clamp(20px, 2.2vw, 25px);
+  text-align: center;
+  position: relative;
+  padding-bottom: 10px;
+}
+.fbdy_marquee .our_patnr::after {
+  content: "";
+  border-bottom: 2px solid #00a0a8;
+  width: 80px;
+  border-radius: 12px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .fbdy_whyHlt-journey .fbdy_whyHlt-title_tg h3 {
@@ -2252,7 +2269,7 @@ p {
   height: auto;
   padding-right: 24px;
   width: 19.7%;
-  background-size: 40px;
+  background-size: contain;
 }
 
 .fbdy_whyHlt-journey
@@ -2820,4 +2837,25 @@ p {
     width: 5rem;
   }
   /* Marquee end */
+
+  /* how to book package */
+  .fbdy_whyHlt-journey {
+    padding: 0 12px;
+  }
+  .fbdy_whyHlt-journey .fbdy_whyHlt-journey_steps {
+    display: flex;
+    margin: 0 0 0 0;
+    background: #fff
+      url(https://helma-mumbai.healthians.com/stationery/mailer-assets/68ef3ef442801.png)
+      no-repeat left top;
+    background-size: contain;
+    min-height: 52vh;
+    height: 100%;
+    padding: 0;
+  }
+
+  .fbdy_whyHlt-journey .fbdy_whyHlt-journey_steps .fbdy_whyHlt-steps_one {
+    display: none;
+  }
+  /* how to book package end */
 }
