@@ -1218,7 +1218,7 @@ p {
 /* what include full body check */
 
 .wt_icld_wrpr {
-  padding-left: 12px !important;
+  padding: 0 12px !important;
 }
 
 .fbdy_inld_heading {
@@ -2766,7 +2766,7 @@ p {
     width: 100px;
   }
   .fbdy_cp_wrap {
-    padding: 0 0 0 12px;
+    padding: 0 10px 0 12px;
   }
 
   /* Mobile Popup Query form */
