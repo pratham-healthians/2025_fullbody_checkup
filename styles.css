@@ -2857,4 +2857,8 @@ p {
     display: none;
   }
   /* how to book package end */
+
+  .fbdy_breadcrumb {
+    padding: 0;
+  }
 }
